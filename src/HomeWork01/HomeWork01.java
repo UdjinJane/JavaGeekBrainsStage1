@@ -112,7 +112,6 @@ public class HomeWork01 {
             case 1582:
 
                 // Условие проверки на 4
-
                 if (year % 4 == 0) {
                     System.out.println(year + " год является високосным");
                 } else {
