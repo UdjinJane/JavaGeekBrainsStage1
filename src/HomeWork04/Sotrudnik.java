@@ -21,17 +21,28 @@ public class Sotrudnik {
 
     }
 
-    public void shoName() {
+    // Методы выводящие в консоль значения полей. Длинная запись.
+
+    void shoName() {
         printThis(nameFIO + "\n");
     }
 
-    public void shoPosition() {
+    void shoPosition() {
         printThis(position + "\n");
     }
 
-    public void shoAge() {
+    void shoAge() {
         printThis(Integer.toString(age) + "\n");
     }
+
+    void shoTelNum() {
+        printThis(Long.toString(telNumber) + "\n");
+    }
+
+    void shoSalary() {
+        printThis(Integer.toString(salary) + "\n");
+    }
+
 
     public String getNameFIO() {
         return nameFIO;
@@ -95,7 +106,7 @@ public class Sotrudnik {
         }
 
         if ((age >= 35) && (salaryChange == 0)) {
-            salary *= 3;
+            salary += 10000;
             salaryChange = 1;
             printThis("Установлена ЗП по условию: " + salary + ".\n");
         } // Увеличиваем базовую ЗП в три раза и меняем признак смены ЗП.

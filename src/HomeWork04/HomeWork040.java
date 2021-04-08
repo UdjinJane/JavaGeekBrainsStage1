@@ -51,7 +51,7 @@ public class HomeWork040 {
         for (int i = 0; i < sotrudniks.length; i++)
 
             if (sotrudniks[i].getAge() >= 40) {
-                Sotrudnik.printThis(sotrudniks[i].getCountAndFIO() + ".\n");
+                Sotrudnik.printThis(sotrudniks[i].getCountAndFIO() + " Phone num: " + sotrudniks[i].getTelNumber() + ".\n");
             }
 
     }
