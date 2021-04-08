@@ -78,6 +78,7 @@ public class HomeWork02 {
 
     }
 
+    
     // Задание 5. Замена на диагонали.
     public static void toChange(int[][] mySquare) {
         System.out.print("\n");
