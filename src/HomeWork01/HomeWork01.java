@@ -94,7 +94,6 @@ public class HomeWork01 {
         if (year % 400 == 0) {
             yearInd = 400;
         }
-
         // Вывод заголовка листинга.
         System.out.println("Вывод результата задания 5. На вход метода подан " + year + " год.");
 
