@@ -1,8 +1,42 @@
 package HomeWork01;
 
+import java.util.Locale;
+
 public class HomeWork01 {
 
     public static void main(String[] args) {
+        String aaa = " 555" + 2 + 2 ;
+        System.out.println(aaa);
+
+        int w = 128;
+        w++;
+        System.out.println(w);
+
+
+        int e = new int[4][8].length;
+
+
+
+
+        String bb = "10";
+        String bbb =  new String ("hello");
+       // bbb.toUpperCase();
+        System.out.println(e);
+       System.out.println("********************");
+
+       String str = "Java";
+        System.out.println(str.charAt(2));
+
+        int c[][]={{1,2},{3,4}};
+
+        int a = 5;
+        int b = 5;
+        System.out.println( 5 <= 5);
+        System.out.println("********************");
+
+        int [] arr = new  int [10];
+        System.out.println(arr.length);
+
         // Задание 1.
         // Инициализация переменных.
         int intA = 1;
