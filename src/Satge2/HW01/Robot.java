@@ -1,6 +1,6 @@
 package Satge2.HW01;
 
-public class Robot implements Info{
+class Robot implements Info{
     private String name;
     // Участник соревнований.
     private int participant; // 1 - участник, 0 - проиграл. По умолчанию все участники.

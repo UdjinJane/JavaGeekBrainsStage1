@@ -1,6 +1,6 @@
 package Satge2.HW01;
 
-public class TheWall implements LetInfo {
+class TheWall implements LetInfo {
     int wallHeigth;
 
     public TheWall(int wallHeigth) {

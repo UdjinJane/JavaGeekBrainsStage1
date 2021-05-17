@@ -1,6 +1,6 @@
 package Satge2.HW01;
 
-public class Human implements Info {
+class Human implements Info {
 
     private String name;
 
@@ -9,9 +9,6 @@ public class Human implements Info {
 
     // Минимальные значения полей!!!!.
     private int hasRun; // Сколько может пробежать.
-
-
-
     private int hasJump; // Как высоко может прыгнуть.
 
 

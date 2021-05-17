@@ -1,5 +1,5 @@
 package Satge2.HW01;
 
-public interface LetInfo {
+interface LetInfo {
         public int GetLet();
 }

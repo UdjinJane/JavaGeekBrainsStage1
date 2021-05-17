@@ -1,6 +1,6 @@
 package Satge2.HW01;
 
-public class Cat implements Info {
+class Cat implements Info {
 
 
     private String name;

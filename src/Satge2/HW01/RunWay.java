@@ -1,6 +1,6 @@
 package Satge2.HW01;
 
-public class RunWay implements LetInfo {
+class RunWay implements LetInfo {
     int runWayLenth;
 
     public RunWay(int runWayLenth) {

@@ -1,6 +1,6 @@
 package Satge2.HW01;
 
-public interface Info {
+interface Info {
     public void ShowInfo();
     public int GetJump();
     public int GetRun();
