@@ -12,10 +12,13 @@ public class Test {
         // Генерируем стену.
         TheWall theWall = new TheWall(1);
         // Генерируем беговую дорожку.
-        RunWay runWay = new RunWay(6);
+        RunWay runWay = new RunWay(20);
 
         // Собираем команду.
         Info [] flock ={human, cat, robot};
+
+        // Собираем препятсвия.
+        LetInfo [] let = {theWall, runWay};
 
         // Получаем информацию о участниках.
         for (int i = 0; i < flock.length; i++){
@@ -23,38 +26,23 @@ public class Test {
             outputInfo(flock[i]);
         }
 
-        // Пусть попрыгают.
-        printThis("**************Отбор по прыжку***************\n");
+        // Пусть попрыгают и побегают.
 
-        for (int i = 0; i < flock.length; i++){
+        for (int z = 0; z < let.length; z++){
+            for (int i = 0; i < flock.length; i++){
+                if ((flock[i].GetJump() < let[0].GetLet()) && (flock[i].GetParticipiant() == 1)){
+                    outputInfo(flock[i]);
+                    printThis("i can't fly!\n");
+                    flock[i].SetParticipiant(); // Если не смог, то сбрасываем участника.
+                }
+                if ((flock[i].GetRun() < let[1].GetLet()) && (flock[i].GetParticipiant() == 1)){
+                    outputInfo(flock[i]);
+                    printThis("i can't Run!\n");
+                    flock[i].SetParticipiant(); // Если не смог, то сбрасываем участника.
+                }
 
-        // Если перепрыгнуть не получается, выводит сообщение о своих праметрах и выбывает из соревнований.
-           if (flock[i].GetJump() < theWall.wallHeigth){
-               outputInfo(flock[i]);
-               printThis("i can't fly!\n");
-               flock[i].SetParticipiant();
-           };
-
+            }
         }
-
-        // Пусть побегают.
-
-        printThis("**************Отбор по бегу***************\n");
-
-        for (int i = 0; i < flock.length; i++){
-
-            // Если перепрыгнуть не получается, выводит сообщение о своих праметрах и выбывает из соревнований.
-            if (flock[i].GetRun() < runWay.runWayLenth){
-                outputInfo(flock[i]);
-                printThis("i can't run!\n");
-                flock[i].SetParticipiant();
-            };
-
-        }
-
-
-
-
 
     }
 

@@ -36,6 +36,10 @@ public class Cat implements Info {
     public void SetParticipiant(){
         setParticipant(0);
     }
+    @Override
+    public int GetParticipiant(){
+        return getParticipant();
+    }
 
     public void SayParam() {
 

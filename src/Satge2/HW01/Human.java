@@ -44,6 +44,11 @@ public class Human implements Info {
         setParticipant(0);
     }
 
+    @Override
+    public int GetParticipiant(){
+        return getParticipant();
+    }
+
     public void SayParam() {
 
     }

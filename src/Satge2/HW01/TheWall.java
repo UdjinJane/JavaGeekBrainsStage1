@@ -1,6 +1,6 @@
 package Satge2.HW01;
 
-public class TheWall {
+public class TheWall implements LetInfo {
     int wallHeigth;
 
     public TheWall(int wallHeigth) {
@@ -13,6 +13,10 @@ public class TheWall {
 
     public void setWallHeigth(int wallHeigth) {
         this.wallHeigth = wallHeigth;
+    }
+
+    public int GetLet() {
+        return getWallHeigth();
     }
 }
 

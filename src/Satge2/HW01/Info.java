@@ -5,5 +5,6 @@ public interface Info {
     public int GetJump();
     public int GetRun();
     public void SetParticipiant();
-
+    public int GetParticipiant();
 }
+
