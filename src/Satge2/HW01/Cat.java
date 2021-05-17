@@ -22,7 +22,7 @@ public class Cat implements Info {
     // Умения.
     @Override
     public void ShowInfo(){
-        System.out.println("Hello! May name is " + getName() + " i'm runnnig: " + getHasRun() + " i'm jampping: " + getHasJump());
+        System.out.println("Привет! Я кот " + getName() + " я пробегаю: " + getHasRun() + " и я прыгаю: " + getHasJump());
     }
     @Override
     public int GetJump(){
@@ -40,10 +40,17 @@ public class Cat implements Info {
     public int GetParticipiant(){
         return getParticipant();
     }
-
-    public void SayParam() {
-
+    @Override
+    public void ShoWin(){
+        if (getParticipant() == 1) {
+            System.out.println("Победитель " + getName());
+        } else
+        {
+            System.out.println(getName() + " выбыл из соревнований!");
+        }
     }
+
+
 
     public String getName() {
         return name;

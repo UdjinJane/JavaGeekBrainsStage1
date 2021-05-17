@@ -6,5 +6,6 @@ public interface Info {
     public int GetRun();
     public void SetParticipiant();
     public int GetParticipiant();
+    public void ShoWin();
 }
 
