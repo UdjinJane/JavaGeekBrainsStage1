@@ -10,35 +10,29 @@ public class Box <T>{
     ArrayList<T> fruitBox;
     public Box(){fruitBox = new ArrayList<T>();}
 
-    // oid addFruit(T fruit) {
-    //    if (currentWeight + 1 <= maxWeight) {
-    //        arrayList.add(fruit);
-    //        currentWeight++;
-    //        if (arrayList.size() < 1)
-    //            isFree = false;
-    //    } else
-    //        System.out.println("The box is full");
-    //
 
     void addFruit (T fruit){
         fruitBox.add(fruit);
     }
 
     float getWeight(Fruit f) {
-        System.out.println("Вес ящика с " + (fruitBox.size() * f.weigth));
+        System.out.println("Вес ящика с " + f.name + ": " + (fruitBox.size() * f.weigth));
         return fruitBox.size() * f.weigth;
-    }
-
-    boolean compare(Fruit f1, Fruit f2) {
-        if (getWeight(f1) == getWeight(f2)) {
-            return true;
-        } else return false;
     }
 
     public boolean compare(Box box) {
         if (currentWeight == box.currentWeight)
             return true;
         return false;
+    }
+// Пересыпалка.
+    public Box<T> replace(Box<T> srcBox){
+
+        this.fruitBox.addAll(srcBox.fruitBox);
+        srcBox.fruitBox.clear();
+        System.out.println("Пересыпали яблоки в новый ящик!");
+        return this;
+
     }
 
 }
